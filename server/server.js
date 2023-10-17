@@ -16,7 +16,12 @@ app.use(express.json());
 // MongoClient.connect('mongodb://127.0.0.1:27017', {useUnifiedTopology: true})
 MongoClient.connect(URL, {useUnifiedTopology: true})
 .then((client) => {
-  const db= client.db('moviematchtest');
+
+  //this points the app to the local collection we made during codeclan, uncomment it out for localhost testing
+  // const db= client.db('moviematch'); 
+
+  //this points the app to the mongoDB atlas collection
+  const db= client.db('moviematchtest'); 
   const favouritesCollection= db.collection('favourites');
   const favouritesRouter= createRouter(favouritesCollection);
   app.use('/favourites', favouritesRouter);
