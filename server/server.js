@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 
+const allowedOrigins = ["http://localhost:3000", "https://moviematchtest-api.onrender.com/", "https://moviematch-test-frontend.onrender.com/"]
+
+URI = 'mongodb+srv://alexkcaj:xGlxP84hSTKW9zjo@alexjackcluster.bzrtr4n.mongodb.net/?retryWrites=true&w=majority'
+
+
 const cors = require('cors');
 app.use(cors());
 
@@ -9,9 +14,10 @@ const createRouter = require('./helpers/create_router.js');
 
 app.use(express.json());
 
-MongoClient.connect('mongodb://127.0.0.1:27017', {useUnifiedTopology: true})
+// MongoClient.connect('mongodb://127.0.0.1:27017', {useUnifiedTopology: true})
+MongoClient.connect(URI, {useUnifiedTopology: true})
 .then((client) => {
-  const db= client.db('moviematch');
+  const db= client.db('moviematchtest');
   const favouritesCollection= db.collection('favourites');
   const favouritesRouter= createRouter(favouritesCollection);
   app.use('/favourites', favouritesRouter);
