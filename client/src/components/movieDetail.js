@@ -98,7 +98,6 @@ const MovieDetail = ({ movies, searchByDirector, toggleFavourites }) => {
             <div className="IMDB">
               <a
                 target="blank"
-                rel="noopener noreferrer"
                 href={link}
                 className="white-text"
               >
