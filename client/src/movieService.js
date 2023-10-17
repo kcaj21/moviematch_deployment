@@ -1,4 +1,5 @@
-const baseURL = 'http://localhost:9000/movies/';
+// const baseURL = 'http://localhost:9000/movies/'; dev URL
+const baseURL = 'https://moviematchtest-api.onrender.com/movies/'; // prod URL
 
 export const getMovies = () => {
   return fetch(baseURL)
