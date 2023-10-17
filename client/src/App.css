@@ -1,0 +1,325 @@
+.App {
+  text-align: center;
+}
+
+a {
+  text-decoration: None;
+}
+
+body {
+  margin: 0;
+  font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-image: url(/src/images/RedCurtains.png);
+  background-size: contain;
+  color: white;
+}
+
+.margin-left {
+  display: flex;
+  justify-content: space-around;
+}
+
+.zoom {
+  width: 20px;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+/* HEADER  */
+
+.Header {
+  font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  background: #080b59;
+  margin: 0;
+  margin-top: -30px;
+  margin-bottom: 15px;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.title {
+  margin-top: -40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-text-box {
+  width: 320px;
+  height: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.title-text-box:hover {
+  transform: scale(1.2);
+}
+
+.title-text {
+  margin-top: -48px;
+  margin-left: 25px;
+  font-family: "Maven Pro", cursive;
+  font-size: 1.8em;
+  text-align: center;
+  color: white;
+}
+
+.camera {
+  width: 50px;
+}
+
+.camera-box {
+  width: 32px;
+  margin-top: 25px;
+}
+
+.heart-container {
+  margin-top: 25px;
+  margin-right: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+}
+
+.heart {
+  width: 25px;
+  height: 25px;
+  text-align: right;
+}
+
+.heart:active {
+  transform: scale(0.85);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+.Nav-bar {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 0px;
+  color: #fff;
+  background-color: #080b59;
+}
+
+.Nav-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Nav-text {
+  color: white;
+  font-weight: normal;
+  text-decoration: None;
+}
+
+.Nav-text:hover {
+  color: red;
+  transition: 200ms ease-in;
+}
+
+/* FORM and BUTTONS */
+
+.text-input-box {
+  height: 22px;
+  border: 2px solid black;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);
+}
+
+.submit {
+  font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-radius: 6px;
+  padding: 0.3em;
+  margin: 0.3em;
+  margin-left: 0.6em;
+  border: 2px solid black;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);
+}
+
+.submit:active {
+  transform: scale(0.95);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.4);
+  /* Lowering the shadow */
+}
+
+.random {
+  font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 0.3em;
+  margin: 0.3em;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);
+}
+
+.random:active {
+  transform: scale(0.95);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.4);
+  /* Lowering the shadow */
+}
+
+.reset {
+  font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 0.3em;
+  margin: 0.3em;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);
+}
+
+.reset:active {
+  transform: scale(0.95);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.4);
+  /* Lowering the shadow */
+}
+
+/* MOVIE LISTS */
+
+.description-box {
+  width: 200px;
+  text-align: center;
+  margin-left: 0px;
+  color: white;
+}
+
+.description-box > a {
+  color: white;
+}
+
+.heart-and-title {
+  width: 200px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  color: white;
+}
+
+.white-text {
+  color: white;
+}
+
+.Item-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.Item-box {
+  width: 160px;
+  height: 420px;
+  text-align: center;
+  padding: 40px;
+}
+
+.Item-box-2 {
+  width: 160px;
+  height: 400px;
+  padding: 40px;
+}
+
+.img {
+  margin-top: -35px;
+  width: 200px;
+  height: 300px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.5);
+}
+
+.img:hover {
+  transform: scale(1.05);
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.5);
+}
+
+.heart-lower {
+  margin-top: 15px;
+}
+
+.text-raise {
+  margin-top: 0px;
+}
+
+.poster {
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* MOVIE DETAIL */
+
+.Detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.Detail-box {
+  width: 300px;
+  height: 400px;
+  margin: 5 5px;
+  text-align: left;
+  padding: 30px;
+}
+
+.IMDB {
+  width: 80px;
+}
+
+.IMDB:hover {
+  transform: scale(1.2);
+}
+
+/* MOVIE DETAIL > YOU MIGHT ALSO LIKE */
+
+.Ymal-detail-box {
+  width: 400px;
+  height: 600px;
+  margin: -5 -5px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Ymal-box {
+  width: 105px;
+  height: 150px;
+  text-align: center;
+  padding: 30px;
+  margin-top: -20px;
+  padding-bottom: -20px;
+}
+
+.Ymal-img {
+  width: 130px;
+  height: 185px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.5);
+}
+
+.Ymal-img:hover {
+  transform: scale(1.05);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.5);
+  /* Lowering the shadow */
+}
+
+.Ymal-description-box {
+  width: 105px;
+  text-align: center;
+  margin-left: 15px;
+  color: white;
+}
+
+.Ymal-text {
+  color: white;
+}
