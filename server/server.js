@@ -24,9 +24,9 @@ MongoClient.connect(URI, {useUnifiedTopology: true})
   const moviesCollection= db.collection('movies');
   const moviesRouter= createRouter(moviesCollection);
   app.use('/movies', moviesRouter);
-}).catch(console.err);
+}).catch(console.err)
 
-app.listen(9000, function () {
+app.listen(10000, function () {
     console.log(`listening on Port ${this.address().port}`)  
 });
 
